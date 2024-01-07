@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+  </head>
+  <body>
+    <style>
+      svg {
+        width: 500px;
+        height: 352px;
+      }
+      use {
+        display: none;
+      }
+      .layer12 {
+        display: block;
+      }
+      svg {
+        transform: scale(0.9);
+      }
+      #back {
+        background: red;
+        width: 600px;
+        height: 600px;
+        padding: 100px 20px 0 33px;
+        box-sizing: border-box;
+        margin: 29px;
+      }
+      svg,
+      #back {
+        transition: 1s;
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        #back {
+          width: calc(100vw - 20px);
+          height: calc(100vw - 20px);
+          margin: 10px;
+          padding: 0;
+          padding: 0 0 0 7%;
+        }
+        svg {
+          width: 90%;
+        }
+      }
+    </style>
+
+    <div id="back">
+      <svg id="frames">
+        <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+        <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+        <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+        <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+        <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+        <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+        <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+        <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+        <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+        <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+        <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+        <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+      </svg>
+      <p
+        id="textcolor"
+        font-size="24px"
+        style="
+          color: black;
+          text-align: center;
+          font-size: 24px;
+          padding-bottom: 10%;
+        "
+      >
+        Click on this text to create a new text.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      var curFrame = 1;
+      var numberOfFrames = 12;
+
+      setInterval(function () {
+        var lastFrame = curFrame === 1 ? numberOfFrames : curFrame - 1;
+        var lastLayer = document.querySelector(".layer" + lastFrame);
+        lastLayer.style.display = "none";
+        var curLayer = document.querySelector(".layer" + curFrame);
+        curLayer.style.display = "block";
+        if (curFrame === numberOfFrames) curFrame = 1;
+        else curFrame++;
+      }, 50);
+
+      function random(seed) {
+        var x = Math.sin(seed) * 10000;
+        return x - Math.floor(x);
+      }
+
+      var use = document.querySelectorAll("use");
+      var textcolor = document.getElementById("textcolor");
+      var lastChanged = 0;
+      var body = document.querySelector("body");
+      body.onclick = function () {
+        clearTimeout(lastChanged);
+        var now = new Date().getTime();
+        if (now - lastChanged < 1000) return;
+        lastChanged = now;
+        var randomColor1 =
+          "#" + Math.floor(random(Math.random()) * 16777215).toString(16);
+        var randomColor2 =
+          "#" +
+          Math.floor(random(Math.random() + 1000) * 16777215).toString(16);
+        document.querySelector("#back").style.background = randomColor1;
+
+        for (var i = 0; i < use.length; i++) {
+          use[i].style.fill = randomColor2;
+          textcolor.style.color = randomColor2;
+        }
+
+        lastChanged = setTimeout(function () {
+          document.querySelector("#back").style.background = "red";
+          textcolor.style.color = "black";
+          for (var i = 0; i < use.length; i++) {
+            use[i].style.fill = "black";
+          }
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>

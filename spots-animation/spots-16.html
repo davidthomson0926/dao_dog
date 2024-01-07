@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    </head>
+    <body>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            div#container {
+                width: 380px;
+                 height: 380px; 
+                display: flex;
+                flex-flow: wrap;
+                margin: 0 auto;
+                align-content: flex-start;
+            }
+            #container.show{
+                position: relative;
+              
+            }
+            #container.show .back{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0 0 0 0;
+            }
+            #container.show svg{
+                height: 50%;
+                margin: 19% 0% 0% 4%;
+            }
+            svg{
+                width: 90%;
+                height: 90%;
+            }
+            use{
+                display: none;
+            }
+            .layer12{
+                display: block;
+            }
+    
+            .back{
+                width: 25%;
+                height: 25%;
+                box-sizing: border-box;
+                padding: 3% 0 0 3%;
+            }
+            #back1{
+                background: red;
+            }
+            #back1 use{
+                fill:grey;
+            }
+            #back2{
+                background:#81d3d2;
+            }
+            #back2 use{
+                fill:rgb(20, 0, 64);
+            }
+            #back3{
+                background:#c7d2ff;
+            }
+            #back3 use{
+                fill:rgb(255, 64, 217);
+            }
+            #back4{
+                background:#f7d2ff;
+            }
+            #back4 use{
+                fill:blue;
+            }
+            #back5{
+                background:#f7d2d2;
+            }
+            #back5 use{
+                fill:rgb(255, 255, 0);
+            }
+            #back6{
+                background:#f7f7d2;
+            }
+            #back6 use{
+                fill:rgb(0, 255, 0);
+            }
+            #back7{
+                background:#d2f7d2;
+            }
+            #back7 use{
+                fill:rgb(0, 255, 255);
+            }
+            #back8{
+                background:#d2f7f7;
+            }
+            #back8 use{
+                fill:rgb(255, 0, 0);
+            }
+            #back9{
+                background:#d2d2f7;
+            }
+            #back9 use{
+                fill:rgb(98, 241, 162);
+            }
+            #back10{
+                background:#632727;
+            }
+            #back10 use{
+                fill:rgb(255, 255, 255);
+            }
+            #back11{
+                background:#400000;
+            }
+            #back11 use{
+                fill:rgb(189, 189, 189);
+            }
+            #back12{
+                background:#d2d2d2;
+            }
+            #back12 use{
+                fill:rgb(255, 255, 255);
+            }
+            #back13{
+                background:#a8a000;
+            }
+            #back13 use{
+                fill:rgb(160, 141, 255);
+            }
+            #back14{
+                background:#950074;
+            }
+            #back14 use{
+                fill:rgb(195, 251, 163);
+            }
+            #back15{
+                background:#257174;
+            }
+            #back15 use{
+                fill:rgb(214, 205, 165);
+            }
+            #back16{
+                background:#7c4087;
+            }
+            #back16 use{
+                fill:rgb(66, 66, 66);
+            }
+          
+        </style>
+        <div id="container">
+            <div id="back1" class="back" data-item="1">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back2"  class="back" data-item="2">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back3" class="back" data-item="3">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back4" class="back" data-item="4">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back5" class="back" data-item="5">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back6" class="back" data-item="6">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back7" class="back" data-item="7">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back8" class="back" data-item="8">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back9" class="back" data-item="9">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back10" class="back" data-item="10">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back11" class="back" data-item="11">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back12" class="back" data-item="12">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back13" class="back" data-item="13">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back14" class="back" data-item="14">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back15" class="back" data-item="15">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+            <div id="back16" class="back" data-item="16">
+                <svg class="frames">
+                    <use class="layer1" xlink:href="spots/layer1.svg#svg" />
+                    <use class="layer2" xlink:href="spots/layer2.svg#svg" />
+                    <use class="layer3" xlink:href="spots/layer3.svg#svg" />
+                    <use class="layer4" xlink:href="spots/layer4.svg#svg" />
+                    <use class="layer5" xlink:href="spots/layer5.svg#svg" />
+                    <use class="layer6" xlink:href="spots/layer6.svg#svg" />
+                    <use class="layer7" xlink:href="spots/layer7.svg#svg" />
+                    <use class="layer8" xlink:href="spots/layer8.svg#svg" />
+                    <use class="layer9" xlink:href="spots/layer9.svg#svg" />
+                    <use class="layer10" xlink:href="spots/layer10.svg#svg" />
+                    <use class="layer11" xlink:href="spots/layer11.svg#svg" />
+                    <use class="layer12" xlink:href="spots/layer12.svg#svg" />
+                </svg>
+            </div>
+           
+        </div>
+        
+        
+        <script type="text/javascript">
+            
+            var curFrame = 1;
+            var numberOfFrames = 12;
+
+            setInterval(
+                function(){
+                    var lastFrame = curFrame === 1? numberOfFrames : curFrame-1;
+                    var lastLayer = document.querySelectorAll('.layer' + lastFrame);
+                    for(var i = 0; i < lastLayer.length; i++){
+                        lastLayer[i].style.display = 'none';
+                    }
+                    var curLayer = document.querySelectorAll('.layer'+curFrame);
+                    for(var i = 0; i < curLayer.length; i++){
+                        curLayer[i].style.display = 'block';
+                    }
+                    if(curFrame === numberOfFrames) curFrame = 1;
+                    else curFrame++;
+                },50
+            );
+
+            var body = document.querySelector('body');
+            var container = document.querySelector('#container');
+            var showClass = 'show';
+            var showIntervals = 0;
+            var curItemShow = 0;
+
+            function showItems(){
+                if(curItemShow){
+                    var curItem = document.querySelector('#back'+curItemShow);
+                    curItem.style.zIndex = 1;
+                }
+                var items = document.querySelectorAll('.back:not(#back'+curItemShow+')');
+                var randomItem = items[Math.floor(Math.random()*items.length)];
+                randomItem.style.zIndex = 2;
+                curItemShow = parseInt(randomItem.getAttribute('data-item'));
+            }
+
+            body.onclick = function(){
+                if(container.classList.contains(showClass)){
+                    container.classList.remove(showClass);
+                    clearInterval(showIntervals);
+                }
+                else {
+                    container.classList.add(showClass);
+                    showItems();
+                    showIntervals = setInterval(
+                        function(){
+                            showItems();
+                        },10000
+                    );
+                }
+            }
+            
+        </script>
+    </body>
+</html>

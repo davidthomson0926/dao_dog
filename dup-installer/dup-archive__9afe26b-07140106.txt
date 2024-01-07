@@ -1,0 +1,634 @@
+{
+    "dup_type": "lite",
+    "created": "2023-02-07 14:01:06",
+    "version_dup": "1.5.2.1",
+    "version_wp": "6.1.1",
+    "version_db": "5.7.39",
+    "version_php": "7.4.33",
+    "version_os": "Darwin",
+    "blogname": "Shapes of Cities",
+    "exportOnlyDB": 0,
+    "secure_on": false,
+    "secure_pass": "$2a$08$AWVB0a1b5r31k5EBFG79rOcwSlHkdRIHC.WUV\/.SnYHdLECjS\/Ro6",
+    "dbhost": null,
+    "dbname": null,
+    "dbuser": null,
+    "dbpass": null,
+    "cpnl_host": null,
+    "cpnl_user": null,
+    "cpnl_pass": null,
+    "cpnl_enable": null,
+    "wp_tableprefix": "ctwp_",
+    "mu_mode": 0,
+    "mu_generation": 0,
+    "mu_siteadmins": [
+        "admin"
+    ],
+    "subsites": [
+        {
+            "id": 1,
+            "domain": "localhost",
+            "path": "\/cities\/",
+            "blogname": "Shapes of Cities",
+            "blog_prefix": "ctwp_",
+            "filteredTables": [],
+            "adminUsers": [
+                {
+                    "ID": "2",
+                    "user_login": "ekogoren",
+                    "id": "2"
+                },
+                {
+                    "ID": "1",
+                    "user_login": "gil",
+                    "id": "1"
+                }
+            ],
+            "fullHomeUrl": "http:\/\/localhost:8888\/cities",
+            "fullSiteUrl": "http:\/\/localhost:8888\/cities",
+            "uploadPath": "wp-content\/uploads",
+            "fullUploadPath": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/uploads",
+            "fullUploadSafePath": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/uploads",
+            "fullUploadUrl": "http:\/\/localhost:8888\/cities\/wp-content\/uploads",
+            "filteredPaths": []
+        }
+    ],
+    "main_site_id": 1,
+    "mu_is_filtered": false,
+    "license_limit": 0,
+    "dbInfo": {
+        "buildMode": "PHP",
+        "charSetList": [
+            "utf8mb4",
+            "utf8"
+        ],
+        "collationList": [
+            "utf8_general_ci",
+            "utf8mb4_unicode_520_ci"
+        ],
+        "engineList": [
+            "InnoDB"
+        ],
+        "isTablesUpperCase": 0,
+        "isNameUpperCase": 0,
+        "name": "cities",
+        "tablesBaseCount": 39,
+        "tablesFinalCount": 39,
+        "muFilteredTableCount": 0,
+        "tablesRowCount": 1003,
+        "tablesSizeOnDisk": 2965504,
+        "tablesList": {
+            "ctwp_commentmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "ctwp_comments": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 98304
+            },
+            "ctwp_duplicator_packages": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 32768
+            },
+            "ctwp_links": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "ctwp_options": {
+                "inaccurateRows": 170,
+                "insertedRows": 170,
+                "size": 1097728
+            },
+            "ctwp_postmeta": {
+                "inaccurateRows": 391,
+                "insertedRows": 391,
+                "size": 114688
+            },
+            "ctwp_posts": {
+                "inaccurateRows": 56,
+                "insertedRows": 56,
+                "size": 131072
+            },
+            "ctwp_termmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "ctwp_terms": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 49152
+            },
+            "ctwp_term_relationships": {
+                "inaccurateRows": 7,
+                "insertedRows": 7,
+                "size": 32768
+            },
+            "ctwp_term_taxonomy": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 49152
+            },
+            "ctwp_usermeta": {
+                "inaccurateRows": 41,
+                "insertedRows": 41,
+                "size": 49152
+            },
+            "ctwp_users": {
+                "inaccurateRows": 1,
+                "insertedRows": 2,
+                "size": 65536
+            },
+            "ctwp_wfblockediplog": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wfblocks7": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "ctwp_wfconfig": {
+                "inaccurateRows": 227,
+                "insertedRows": 246,
+                "size": 81920
+            },
+            "ctwp_wfcrawlers": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wffilechanges": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wffilemods": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wfhits": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "ctwp_wfhoover": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "ctwp_wfissues": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 81920
+            },
+            "ctwp_wfknownfilelist": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wflivetraffichuman": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "ctwp_wflocs": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wflogins": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "ctwp_wfls_2fa_secrets": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "ctwp_wfls_settings": {
+                "inaccurateRows": 24,
+                "insertedRows": 24,
+                "size": 16384
+            },
+            "ctwp_wfnotifications": {
+                "inaccurateRows": 2,
+                "insertedRows": 3,
+                "size": 16384
+            },
+            "ctwp_wfpendingissues": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 81920
+            },
+            "ctwp_wfreversecache": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_wfsnipcache": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "ctwp_wfstatus": {
+                "inaccurateRows": 20,
+                "insertedRows": 20,
+                "size": 49152
+            },
+            "ctwp_wftrafficrates": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "ctwp_yoast_indexable": {
+                "inaccurateRows": 18,
+                "insertedRows": 18,
+                "size": 114688
+            },
+            "ctwp_yoast_indexable_hierarchy": {
+                "inaccurateRows": 15,
+                "insertedRows": 15,
+                "size": 65536
+            },
+            "ctwp_yoast_migrations": {
+                "inaccurateRows": 23,
+                "insertedRows": 23,
+                "size": 32768
+            },
+            "ctwp_yoast_primary_term": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "ctwp_yoast_seo_links": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            }
+        },
+        "varLowerCaseTables": "2",
+        "dbEngine": "MySQL",
+        "version": "5.7.39",
+        "versionComment": "MySQL Community Server (GPL)",
+        "viewCount": 0,
+        "procCount": 0,
+        "funcCount": 0,
+        "triggerList": []
+    },
+    "packInfo": {
+        "packageId": 1,
+        "packageName": "20230207_shapesofcities",
+        "packageHash": "9afe26b-07140106",
+        "secondaryHash": "1e94b80-07140106"
+    },
+    "fileInfo": {
+        "dirCount": 797,
+        "fileCount": 5852,
+        "size": 34848250
+    },
+    "wpInfo": {
+        "version": "6.1.1",
+        "is_multisite": false,
+        "network_id": 1,
+        "targetRoot": "\/Applications\/MAMP\/htdocs\/cities",
+        "targetPaths": [
+            "\/Applications\/MAMP\/htdocs\/cities"
+        ],
+        "adminUsers": [
+            {
+                "ID": "2",
+                "user_login": "ekogoren",
+                "id": "2"
+            },
+            {
+                "ID": "1",
+                "user_login": "gil",
+                "id": "1"
+            }
+        ],
+        "configs": {
+            "defines": {
+                "ABSPATH": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/",
+                    "inWpConfig": true
+                },
+                "DB_CHARSET": {
+                    "value": "utf8mb4",
+                    "inWpConfig": true
+                },
+                "DB_COLLATE": {
+                    "value": "",
+                    "inWpConfig": true
+                },
+                "AUTH_KEY": {
+                    "value": "IJ8GP=%F)YTt|ufhh;fr,O]kMLPkb)%N{_wA@vT@!J )+p&@^8NHlqE*RsxmB]d{",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_KEY": {
+                    "value": "|h,G>f5nJhyWJxM2yKPGWf@@)Z|~rt<]`$C<VN5K52)aK?8n#Q$wt{M\/*#.CN6Bx",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_KEY": {
+                    "value": "yaZAv<mIg.`KQ{uycGeI!u;gVi0Lx56MI!7{=s>R)Bf!)&r>6a--p;74o%9niz=N",
+                    "inWpConfig": true
+                },
+                "NONCE_KEY": {
+                    "value": "&<9 >{%pi6xw=a)\/8dw8$2aZloU[;4i89i#M.<\/b+JZO}yzv>{@[GV?$WkD(Fb{T",
+                    "inWpConfig": true
+                },
+                "AUTH_SALT": {
+                    "value": "6f?v19!_}_2q7k61=yO(!gYN,u{hoa)B>5,h<iz$t[eUS.]oSJXM~QOL=SWK5:Cq",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_SALT": {
+                    "value": "u`,>q ,O.7Xdb4~4;-Q?yv]|R)?4(.fI>qI.ZXt^a{k@XqBj#8{~&|nToq)-:]Vb",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_SALT": {
+                    "value": ")yt8`pby+4KO=Csr,[z^._W\/bNg_;wLXuYaW2kMGusv_:m@(t<}0{_Chsc(veh-Y",
+                    "inWpConfig": true
+                },
+                "NONCE_SALT": {
+                    "value": "p^f~|tIrDHw)gwh#oA{2Kpq9&D+vk8AYCzQnZ@@+,xx081.mg:\/(v.5[D*B#J<v.",
+                    "inWpConfig": true
+                },
+                "WP_CONTENT_DIR": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_CONTENT_URL": {
+                    "value": "http:\/\/localhost:8888\/cities\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_DIR": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_URL": {
+                    "value": "http:\/\/localhost:8888\/cities\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "PLUGINDIR": {
+                    "value": "wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "AUTOSAVE_INTERVAL": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "WP_POST_REVISIONS": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "COOKIE_DOMAIN": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "MULTISITE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG": {
+                    "value": true,
+                    "inWpConfig": true
+                },
+                "SCRIPT_DEBUG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_LOG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_DISPLAY": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WP_MEMORY_LIMIT": {
+                    "value": "40M",
+                    "inWpConfig": false
+                },
+                "WP_MAX_MEMORY_LIMIT": {
+                    "value": "256M",
+                    "inWpConfig": false
+                },
+                "WP_CACHE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_LANG_DIR": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/languages",
+                    "inWpConfig": false
+                },
+                "WP_CRON_LOCK_TIMEOUT": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "COOKIEPATH": {
+                    "value": "\/cities\/",
+                    "inWpConfig": false
+                },
+                "SITECOOKIEPATH": {
+                    "value": "\/cities\/",
+                    "inWpConfig": false
+                },
+                "ADMIN_COOKIE_PATH": {
+                    "value": "\/cities\/wp-admin",
+                    "inWpConfig": false
+                },
+                "PLUGINS_COOKIE_PATH": {
+                    "value": "\/cities\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "TEMPLATEPATH": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/themes\/cities",
+                    "inWpConfig": false
+                },
+                "STYLESHEETPATH": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/themes\/cities",
+                    "inWpConfig": false
+                },
+                "EMPTY_TRASH_DAYS": {
+                    "value": 30,
+                    "inWpConfig": false
+                },
+                "FORCE_SSL_ADMIN": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_DIR": {
+                    "value": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_URL": {
+                    "value": "http:\/\/localhost:8888\/cities\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "MUPLUGINDIR": {
+                    "value": "wp-content\/mu-plugins",
+                    "inWpConfig": false
+                }
+            },
+            "realValues": {
+                "siteUrl": "http:\/\/localhost:8888\/cities",
+                "homeUrl": "http:\/\/localhost:8888\/cities",
+                "loginUrl": "http:\/\/localhost:8888\/cities\/wp-login.php",
+                "contentUrl": "http:\/\/localhost:8888\/cities\/wp-content",
+                "uploadBaseUrl": "http:\/\/localhost:8888\/cities\/wp-content\/uploads",
+                "pluginsUrl": "http:\/\/localhost:8888\/cities\/wp-content\/plugins",
+                "mupluginsUrl": "http:\/\/localhost:8888\/cities\/wp-content\/mu-plugins",
+                "themesUrl": "http:\/\/localhost:8888\/cities\/wp-content\/themes",
+                "originalPaths": {
+                    "home": "\/Applications\/MAMP\/htdocs\/cities",
+                    "abs": "\/Applications\/MAMP\/htdocs\/cities",
+                    "wpconfig": "\/Applications\/MAMP\/htdocs\/cities",
+                    "wpcontent": "\/Applications\/MAMP\/htdocs\/cities\/wp-content",
+                    "uploads": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/uploads",
+                    "plugins": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/plugins",
+                    "muplugins": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/mu-plugins",
+                    "themes": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/themes"
+                },
+                "archivePaths": {
+                    "home": "\/Applications\/MAMP\/htdocs\/cities",
+                    "abs": "\/Applications\/MAMP\/htdocs\/cities",
+                    "wpconfig": "\/Applications\/MAMP\/htdocs\/cities",
+                    "wpcontent": "\/Applications\/MAMP\/htdocs\/cities\/wp-content",
+                    "uploads": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/uploads",
+                    "plugins": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/plugins",
+                    "muplugins": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/mu-plugins",
+                    "themes": "\/Applications\/MAMP\/htdocs\/cities\/wp-content\/themes"
+                }
+            }
+        },
+        "plugins": {
+            "advanced-custom-fields-pro\/acf.php": {
+                "slug": "advanced-custom-fields-pro\/acf.php",
+                "name": "Advanced Custom Fields PRO",
+                "version": "6.0.7",
+                "pluginURI": "https:\/\/www.advancedcustomfields.com",
+                "author": "WP Engine",
+                "authorURI": "https:\/\/wpengine.com\/?utm_source=wordpress.org&utm_medium=referral&utm_campaign=plugin_directory&utm_content=advanced_custom_fields",
+                "description": "Customize WordPress with powerful, professional and intuitive fields.",
+                "title": "Advanced Custom Fields PRO",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "akismet\/akismet.php": {
+                "slug": "akismet\/akismet.php",
+                "name": "Akismet Anti-Spam",
+                "version": "5.0.1",
+                "pluginURI": "https:\/\/akismet.com\/",
+                "author": "Automattic",
+                "authorURI": "https:\/\/automattic.com\/wordpress-plugins\/",
+                "description": "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam<\/strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.",
+                "title": "Akismet Anti-Spam",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "duplicator\/duplicator.php": {
+                "slug": "duplicator\/duplicator.php",
+                "name": "Duplicator",
+                "version": "1.5.2.1",
+                "pluginURI": "https:\/\/snapcreek.com\/duplicator\/duplicator-free\/",
+                "author": "Snap Creek",
+                "authorURI": "http:\/\/www.snapcreek.com\/duplicator\/",
+                "description": "Migrate and backup a copy of your WordPress files and database. Duplicate and move a site from one location to another quickly.",
+                "title": "Duplicator",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "hello.php": {
+                "slug": "hello.php",
+                "name": "Hello Dolly",
+                "version": "1.7.2",
+                "pluginURI": "http:\/\/wordpress.org\/plugins\/hello-dolly\/",
+                "author": "Matt Mullenweg",
+                "authorURI": "http:\/\/ma.tt\/",
+                "description": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly<\/cite> in the upper right of your admin screen on every page.",
+                "title": "Hello Dolly",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wordfence\/wordfence.php": {
+                "slug": "wordfence\/wordfence.php",
+                "name": "Wordfence Security",
+                "version": "7.8.2",
+                "pluginURI": "http:\/\/www.wordfence.com\/",
+                "author": "Wordfence",
+                "authorURI": "http:\/\/www.wordfence.com\/",
+                "description": "Wordfence Security - Anti-virus, Firewall and Malware Scan",
+                "title": "Wordfence Security",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wordpress-seo\/wp-seo.php": {
+                "slug": "wordpress-seo\/wp-seo.php",
+                "name": "Yoast SEO",
+                "version": "20.0",
+                "pluginURI": "https:\/\/yoa.st\/1uj",
+                "author": "Team Yoast",
+                "authorURI": "https:\/\/yoa.st\/1uk",
+                "description": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.",
+                "title": "Yoast SEO",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            }
+        },
+        "themes": {
+            "cities": {
+                "slug": "cities",
+                "themeName": "shape of Cities",
+                "version": "1.0",
+                "themeURI": "",
+                "parentTheme": false,
+                "template": "cities",
+                "stylesheet": "cities",
+                "description": "OOP starter theme",
+                "author": "Eko Goren",
+                "authorURI": "",
+                "tags": [],
+                "isAllowed": true,
+                "isActive": true,
+                "defaultTheme": false
+            }
+        }
+    },
+    "opts_delete": "[\"duplicator_ui_view_state\",\"duplicator_package_active\",\"duplicator_settings\",\"duplicator_is_pro_enable_notice_dismissed\"]",
+    "brand": {
+        "name": "Duplicator",
+        "isDefault": true,
+        "logo": "<i class=\"fa fa-bolt fa-sm\"><\/i> Duplicator",
+        "enabled": false,
+        "style": []
+    },
+    "overwriteInstallerParams": {
+        "blogname": {
+            "value": "Shapes of Cities"
+        }
+    },
+    "installer_base_name": "installer.php.bak",
+    "installer_backup_name": "20230207_shapesofcities_9afe26b5dc7690c51490_20230207140106_installer-backup.php",
+    "package_name": "20230207_shapesofcities_9afe26b5dc7690c51490_20230207140106_archive.zip",
+    "package_hash": "9afe26b-07140106",
+    "package_notes": ""
+}

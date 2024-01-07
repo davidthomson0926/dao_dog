@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,700&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+
+
+body{
+    background-color: #f2eee8;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}
+
+.page-template-minted #cities{
+    display: none;
+}
+
+header{
+    padding: 40px;
+}
+
+#x{
+    display:none;
+}
+#cities{
+    height: 375px;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+#cities-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('./images/cities.svg');
+    width: 99900vw;
+    height: 100%;
+    background-size: contain;
+    animation: marquee 20s linear infinite;
+    background-repeat: repeat-x;
+}
+
+
+#logo{
+    background-image: url('./images/logo.png');
+    width: 660px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#alter{
+    font-family: 'Playfair Display', serif;
+    color:#505050;
+    font-size: 30px;
+}
+
+.menu {
+    float: right;
+    margin-top: -61px;
+    display: flex;
+}
+
+.menu li a{ 
+    color:#21a341;
+    font-size: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.menu li a:hover, .menu li.current_page_item a{
+    font-weight: 700;
+}
+
+#countdown{
+    width:100vw;
+    text-align: center;
+}
+
+#ends-in{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 35px;
+}
+
+#counter{
+    color:#21a341;
+    font-weight: bold;
+}
+
+#counter-numbers{
+    font-size: 38px;
+}
+
+#counter-numbers span{
+    margin: 0 12px;
+}
+
+#counting-texts{
+    display: flex;
+    width: 300px;
+    margin:22px auto 26px;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+}
+
+#countdown-button{
+    display: block;
+    width: 268px;
+    height: 62px;
+    background-color: #21a341;
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    padding-top: 21px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+#countdown-button:hover{
+    background-color: white;
+    color:#21a341;
+}
+
+#quotes{
+    max-width:750px;
+    margin: 0 auto 180px;
+    position: relative;
+}
+
+#quotes .quote{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+    margin-top: 37px;
+}
+#quotes .quote:first-child{
+    display: block;
+}
+#quotes .quote .quote-author{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#about{
+    padding: 57px 40px;
+    
+}
+
+.about-row{
+    display: flex;
+    width: 100%;
+}
+
+.about-row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.about-row>div{
+    width: 50%;
+    min-height: calc(100vh - 200px);
+    line-height: 1.4;
+}
+
+.about-row-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 50%;
+}
+
+.about-content{
+    padding: 84px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color:#383838;
+}
+
+.about-content h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: #21a341;
+    margin-bottom: 75px;
+}
+
+#minted{
+    padding: 80px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:100px;
+    justify-content: center;
+}
+
+.minted-item img{
+    height: 512px;
+    border:1px solid black;
+    cursor: pointer;
+}
+.minted-item p{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color:#494949;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+}
+
+#members{
+    display: flex;
+    flex-wrap: wrap;
+    gap:130px;
+    justify-content: center;
+}
+
+.member{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.member .name{
+    font-size: 30px;
+    margin: 18px 0 5px;
+}
+
+.member .title{
+    font-size: 24px;
+}
+
+.member-image{
+    width: 290px;
+    height: 290px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#team-footer{
+    background-image: url('./images/team-footer.png');
+    width: 100vw;
+    height: 482px;
+    background-repeat: repeat-x;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:1740px){
+    .menu{
+        margin-top: -55px;
+    }
+    .menu li a{
+        font-size: 23px;
+        margin-left: 38px
+    }
+}
+
+
+@media screen and (max-width:1550px){
+    .menu{
+        margin-top: -50px;
+    }
+    .menu li a{
+        font-size: 19px;
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width:1420px){
+    #logo{
+        width: 540px;
+        height: 64px;
+    }
+    #alter{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .menu{
+        margin-top: -47px;;
+    }
+    .menu li a {
+        font-size: 16px;
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    #logo{
+        width: 460px;
+        height: 54px;
+    }
+    #alter{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .menu li a {
+        font-size: 12px;
+        margin-left: 19px;
+    }
+}
+
+@media screen and (max-width:950px){/*mobile*/
+    .menu {
+        margin-top: 0;
+        background: white;
+        width: 150px;
+        display: block;
+        height: 100vh;
+        position: fixed;
+        right: -160px;
+        transition: 0.3s;
+        top: 0;
+        z-index: 9999999999;
+        padding: 35px 18px 18px;
+        display: block;
+    }
+    .menu.open{
+        right: 0;
+    }
+    .menu li{
+        margin-bottom: 8px;
+    }
+    #x {
+        z-index: 99999999999;
+        color: #21a341;
+        position: fixed;
+        right: 128px;
+        top: 8px;
+    }
+    #burger {
+        position: absolute;
+        top: 59px;
+        right: 20px;
+        width: 50px;
+        height: 70px;
+    }
+
+    div#burger>div {
+        width: 100%;
+        height: 7px;
+        background: #21a341;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:780px){
+    #quotes {
+        max-width: 90vw;
+    }
+    #quotes .quote{
+        font-size: 25px;
+    }
+    #quotes .quote .quote-author{
+        font-size: 20px;
+    }
+    .about-row, .about-row:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .about-row>div {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+    }
+    .about-row-image{
+        height: 100vw!important;
+    }
+    .about-content {
+        padding: 32px 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    #logo {
+        width: 70vw;
+        height: 12vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #alter {
+        font-size: 4vw;
+    }
+    header {
+        padding: 25px;
+    }
+    #countdown-button{
+        width: 218px;
+        height: 42px;
+        font-size: 20px;
+        padding-top: 11px;
+    }
+
+    .about-content h2{
+        font-size: 39px;
+    }
+    .about-content{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:550px){
+    #burger{
+        top: 52px;
+    }
+}
+
+@media screen and (max-width:450px){
+    #burger{
+        top: 48px;
+        width: 43px;
+    }
+    .about-content h2{
+        font-size: 32px;
+    }
+    .about-content{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    #burger{
+        top: 47px;
+        width: 37px;
+    }
+    div#burger>div{
+        height: 5px;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width:350px){
+    #burger{
+        top: 43px;
+    }
+    #counter-numbers {
+        font-size: 32px;
+    }
+    #counting-texts{
+        width: 264px;
+    }
+}
+
+@media screen and (max-width:310px){
+    #burger{
+        top: 40px;
+    }
+    #logo {
+        width: 64vw;
+    }
+}
